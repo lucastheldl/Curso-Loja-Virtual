@@ -12066,5 +12066,57 @@ fieldset:disabled .btn {
   }
 }
 /*# sourceMappingURL=bootstrap.min.css.map */
+* {
+  color: #343A40;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: #FFC107;
+  padding: 25px;
+}
+header form input[type=text] {
+  background: white;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px 10px 20px;
+}
+header form button {
+  background: none;
+  border: none;
+  position: relative;
+  right: 35px;
+}
+header ul li {
+  position: relative;
+}
+header ul li span.notificacao {
+  color: white;
+  position: absolute;
+  top: -10px;
+  left: 2px;
+  background: #F2653E;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+}
+header ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #343A40;
+}
+header ul li a svg {
+  font-size: 30px;
+  width: 20px;
+  height: 20px;
+}
+header ul li a:hover {
+  color: initial;
+}
 
 /*# sourceMappingURL=style.css.map */
