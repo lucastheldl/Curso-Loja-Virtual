@@ -1,0 +1,28 @@
+footer {
+  background-color: $cor-secundaria;
+  padding: 25px 0;
+  margin-top: 50px;
+
+  h4 {
+    color: $cor-primaria;
+    font-size: 25px;
+  }
+
+  a {
+    color: $branco;
+    font-size: 16px;
+
+    &:hover {
+      color: $branco;
+    }
+  }
+
+  ul {
+    li.ellipsis {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}

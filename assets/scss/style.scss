@@ -1,8 +1,21 @@
 //Fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&family=Water+Brush&display=swap');
 
-//Framework
+//variaveis
 @import './variaveis.scss';
-@import './bootstrap.min.scss';
-@import './config.scss';
+
+//components
 @import './header.scss';
+@import './nav-produtos.scss';
+@import './banners-promocionais-statico.scss';
+@import './produtos.scss';
+@import './footer.scss';
+@import './responsivo.scss';
+//Framework
+@import './bootstrap.min.scss';
+//components bootstrap
+@import './breadcrumb.scss';
+@import './ver-produto.scss';
+
+//Config
+@import './config.scss';

@@ -1,0 +1,28 @@
+.produtos {
+  .produto-preco {
+    form {
+      select {
+        margin: 2px 0 20px;
+      }
+    }
+
+    strong {
+      font-size: 40px;
+    }
+
+    p {
+      font-weight: bold;
+      display: block;
+    }
+  }
+
+  .produtos-stars {
+    svg {
+      height: 20px;
+      width: 20px;
+      fill: $amarelo;
+    }
+  }
+
+
+}

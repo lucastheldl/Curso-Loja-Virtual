@@ -1,5 +1,201 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&family=Water+Brush&display=swap");
+header {
+  background: #FFC107;
+  padding: 25px;
+}
+header form input[type=text] {
+  background: white;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px 10px 20px;
+}
+header form button {
+  background: none;
+  border: none;
+  position: relative;
+  right: 35px;
+}
+header ul li {
+  position: relative;
+}
+header ul li span.notificacao {
+  color: white;
+  position: absolute;
+  top: -10px;
+  left: 2px;
+  background: #F2653E;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+}
+header ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #343A40;
+}
+header ul li a svg {
+  font-size: 30px;
+  width: 20px;
+  height: 20px;
+}
+header ul li a:hover {
+  color: initial;
+}
+
+nav.nav-produtos {
+  background-color: #343A40;
+  color: white;
+}
+nav.nav-produtos a {
+  color: white;
+}
+nav.nav-produtos ul.nav li {
+  position: relative;
+  padding: 10px 5px;
+}
+nav.nav-produtos ul.nav li svg {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+nav.nav-produtos ul.nav li:hover {
+  background: black;
+}
+nav.nav-produtos ul.nav li:hover ul.nav {
+  display: block;
+}
+nav.nav-produtos ul.nav li ul.nav {
+  z-index: 999;
+  display: none;
+  position: absolute;
+  top: 44px;
+  left: 0px;
+  background-color: #343A40;
+  border-top: solid #FFC107 10px;
+  width: 100%;
+}
+nav.nav-produtos ul.nav li ul.nav li {
+  padding: 10px 25px;
+}
+
+.banners-promocionais-statico {
+  margin-top: 30px;
+}
+.banners-promocionais-statico .banners-promocionais-statico-12x {
+  background-color: #FF0F9A;
+  background-image: url("../images/parcele-em-12x.jpg");
+}
+.banners-promocionais-statico .banners-promocionais-statico-todo-br {
+  background-color: #B343C3;
+  background-image: url("../images/entrega-para-todo-brasil.jpg");
+}
+.banners-promocionais-statico .banners-promocionais-statico-12x,
+.banners-promocionais-statico .banners-promocionais-statico-todo-br {
+  background-size: cover;
+  height: 105px;
+  padding: 20px 60px;
+  color: white;
+}
+.banners-promocionais-statico .banners-promocionais-statico-12x svg,
+.banners-promocionais-statico .banners-promocionais-statico-12x p,
+.banners-promocionais-statico .banners-promocionais-statico-todo-br svg,
+.banners-promocionais-statico .banners-promocionais-statico-todo-br p {
+  margin: 0;
+  padding: 0;
+}
+.banners-promocionais-statico .banners-promocionais-statico-12x svg,
+.banners-promocionais-statico .banners-promocionais-statico-todo-br svg {
+  height: 50px;
+  width: 50px;
+}
+.banners-promocionais-statico .banners-promocionais-statico-12x p,
+.banners-promocionais-statico .banners-promocionais-statico-todo-br p {
+  font-weight: 100;
+  font-size: 23px;
+  line-height: 110%;
+  margin-left: 20px;
+}
+.banners-promocionais-statico .banners-promocionais-statico-12x p strong,
+.banners-promocionais-statico .banners-promocionais-statico-todo-br p strong {
+  font-weight: bold;
+}
+
+.produtos {
+  margin: 30px 0;
+}
+.produtos .produtos-container {
+  margin: 30px 0;
+}
+.produtos .produtos-container .produtos-itens {
+  color: #343A40;
+}
+.produtos .produtos-container .produtos-itens h2 {
+  font-size: 19px;
+  margin: 10px 0 0px;
+}
+.produtos .produtos-container .produtos-itens .produtos-stars svg {
+  height: 10px;
+  width: 10px;
+  fill: #FFC107;
+}
+.produtos .produtos-container .produtos-itens .produto-preco {
+  font-size: 16px;
+}
+
+footer {
+  background-color: #343A40;
+  padding: 25px 0;
+  margin-top: 50px;
+}
+footer h4 {
+  color: #FFC107;
+  font-size: 25px;
+}
+footer a {
+  color: white;
+  font-size: 16px;
+}
+footer a:hover {
+  color: white;
+}
+footer ul li.ellipsis {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  header form {
+    margin: 20px 0 !important;
+  }
+
+  #banner-promocionais {
+    display: none;
+  }
+
+  .produtos .produtos-container img {
+    width: 100%;
+  }
+
+  footer h4 {
+    margin-top: 8px;
+  }
+}
+@media (max-width: 991px) {
+  header ul li {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 375px) {
+  .banners-promocionais-statico .banners-promocionais-statico-12x p,
+.banners-promocionais-statico .banners-promocionais-statico-todo-br p {
+    font-size: 14px;
+  }
+}
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -12066,57 +12262,50 @@ fieldset:disabled .btn {
   }
 }
 /*# sourceMappingURL=bootstrap.min.css.map */
-* {
+.breadcrumb {
+  background: initial;
+  margin: 40px 0;
+  padding: 0;
+}
+.breadcrumb a {
+  color: #FF0F9A;
+}
+
+.produtos .produto-preco form select {
+  margin: 2px 0 20px;
+}
+.produtos .produto-preco strong {
+  font-size: 40px;
+}
+.produtos .produto-preco p {
+  font-weight: bold;
+  display: block;
+}
+.produtos .produtos-stars svg {
+  height: 20px;
+  width: 20px;
+  fill: #FFC107;
+}
+
+body {
   color: #343A40;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-header {
-  background: #FFC107;
-  padding: 25px;
+h1 {
+  font-size: 26px;
 }
-header form input[type=text] {
-  background: white;
-  width: 100%;
-  border-radius: 30px;
-  border: none;
-  padding: 10px 20px 10px 20px;
-}
-header form button {
-  background: none;
-  border: none;
-  position: relative;
-  right: 35px;
-}
-header ul li {
-  position: relative;
-}
-header ul li span.notificacao {
-  color: white;
-  position: absolute;
-  top: -10px;
-  left: 2px;
-  background: #F2653E;
-  border-radius: 100%;
-  width: 15px;
-  height: 15px;
-  font-size: 10px;
-}
-header ul li a {
-  font-size: 16px;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: bold;
-  color: #343A40;
-}
-header ul li a svg {
-  font-size: 30px;
-  width: 20px;
-  height: 20px;
-}
-header ul li a:hover {
-  color: initial;
+  margin: 10px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
