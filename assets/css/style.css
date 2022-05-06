@@ -12271,17 +12271,30 @@ fieldset:disabled .btn {
   color: #FF0F9A;
 }
 
-.produtos .produto-preco form select {
-  margin: 2px 0 20px;
+.produtos .produtos-compra figure {
+  margin: 0;
 }
-.produtos .produto-preco strong {
+.produtos .produtos-compra .produtos-conteudo h1 {
+  margin: 0;
+  font-size: 32px;
+}
+.produtos .produtos-compra .produtos-conteudo p {
+  font-size: 16px;
+}
+.produtos .produtos-compra .produto-preco form {
+  font-weight: 100;
+}
+.produtos .produtos-compra .produto-preco form select {
+  margin: 10px 0 20px;
+}
+.produtos .produtos-compra .produto-preco strong {
   font-size: 40px;
 }
-.produtos .produto-preco p {
+.produtos .produtos-compra .produto-preco p {
   font-weight: bold;
   display: block;
 }
-.produtos .produtos-stars svg {
+.produtos .produtos-compra .produtos-stars svg {
   height: 20px;
   width: 20px;
   fill: #FFC107;
